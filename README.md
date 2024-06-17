@@ -10,8 +10,7 @@
 
 ### How to use? 
 - Fine-tuned Model :
-- ![result](https://github.com/ddsntc1/Chatbot_FutFut/assets/38596856/0096188e-c3a8-41db-9938-394b54408bc5)
-
+- 
   
 
 
