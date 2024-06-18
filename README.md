@@ -15,8 +15,11 @@
 
 
 
-
-
 #### About Fine-tuning
 
 - Method : By Unsloth
+- Trainer : SFTrainer, DPOTrainer
+
+#### About RAG
+
+- Method
