@@ -73,7 +73,7 @@ def all_files(path):
 
     
     # 임베딩 모델 선언
-    embedding_model = SentenceTransformerEmbeddings(model_name='BM-K/KoSimCSE-roberta-multitask', model_kwargs={"trust_remote_code":True}) 
+    embedding_model = SentenceTransformerEmbeddings(model_name='bespin-global/klue-sroberta-base-continue-learning-by-mnr', model_kwargs={"trust_remote_code":True}) 
     
     # 벡터스토어 선언
     os.environ['PINECONE_API_KEY']
@@ -82,7 +82,7 @@ def all_files(path):
 
     index_name = os.getenv('INDEX_NAME')
 
-    print('Vector DB 초기화. Index_name = ' + index_name)
+    print('Vector DB 초기화. Index_name = ' + str(index_name))
     spec = ServerlessSpec(cloud='aws', region='us-east-1')
 
     # 인덱스 존재여부 확인 및 삭제
@@ -105,10 +105,11 @@ def all_files(path):
 
     PineconeVectorStore.from_documents(
     documents=flattened_list,
-    index_name='futsalchat',
+    index_name=index_name,
     embedding=embedding_model
     )
 
 
 
     print('저장 완료')
+    return embedding_model

@@ -9,9 +9,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-embedding_model = SentenceTransformerEmbeddings(model_name='BM-K/KoSimCSE-roberta-multitask', model_kwargs={"trust_remote_code":True}) 
+# embedding_model = SentenceTransformerEmbeddings(model_name='bespin-global/klue-sroberta-base-continue-learning-by-mnr', model_kwargs={"trust_remote_code":True}) 
 
-def retriever():
+def retriever(embedding_model):
         # Pinecone vector store 초기화  
     vectorstore = PineconeVectorStore(  
     index_name=os.getenv("INDEX_NAME"), embedding=embedding_model

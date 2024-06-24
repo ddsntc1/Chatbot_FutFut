@@ -81,7 +81,7 @@ def all_files(path):
     
     
     # 임베딩 모델 선언
-    EMBEDDING_MODEL = "klue-sroberta-base-continue-learning-by-mnr"
+    EMBEDDING_MODEL = "bespin-global/klue-sroberta-base-continue-learning-by-mnr"
     embeddings = SentenceTransformer(model_name_or_path=EMBEDDING_MODEL)
     
     # 벡터스토어 선언
