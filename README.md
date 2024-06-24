@@ -24,3 +24,8 @@
 #### About RAG
 
 - Method
+
+#### Fine-tuned Result:
+
+- https://huggingface.co/Dongwookss
+- https://huggingface.co/mintaeng
