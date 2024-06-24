@@ -73,7 +73,7 @@ def all_files(path):
 
     
     # 임베딩 모델 선언
-    embedding_model = SentenceTransformerEmbeddings(model_name='bespin-global/klue-sroberta-base-continue-learning-by-mnr', model_kwargs={"trust_remote_code":True}) 
+    embedding_model = SentenceTransformerEmbeddings(model_name='BM-K/KoSimCSE-roberta-multitask', model_kwargs={"trust_remote_code":True}) 
     
     # 벡터스토어 선언
     os.environ['PINECONE_API_KEY']
@@ -102,14 +102,34 @@ def all_files(path):
         metric='cosine',  
         spec=spec  
     )  
+    
+    # 인덱스 재생성 및 데이터 입력
+    # index = pc.Index(index_name)
+    print('Vector DB 들어가는 중. Index_name = ' + str(index_name))
 
-    PineconeVectorStore.from_documents(
+    # # 텍스트 임베딩 생성
+    # texts = [doc.page_content for doc in flattened_list]
+    # embedded_texts = []
+    # for txt in texts:
+    #     embedded_texts.append(embedding_model.embed_query(txt))
+
+    
+    # # 벡터 DB에 임베딩 추가
+    # ids = [str(i) for i in range(len(embedded_texts))]
+    # metadata = [doc.metadata for doc in flattened_list]
+    
+    # # db올릴때 무료버전이기때문에 용량 터짐 -> 나눠서 올리자
+    # batch_size = 28
+    # for i in range(0, len(embedded_texts), batch_size):
+    #     batch_vectors = [{"id": id, "values": vector, "metadata": meta} for id, vector, meta in zip(ids[i:i + batch_size], embedded_texts[i:i + batch_size], metadata[i:i + batch_size])]
+    #     index.upsert(vectors=batch_vectors)
+        
+    
+    Vectorstore = PineconeVectorStore.from_documents(
     documents=flattened_list,
     index_name=index_name,
     embedding=embedding_model
     )
 
-
-
     print('저장 완료')
-    return embedding_model
+    return Vectorstore
