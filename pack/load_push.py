@@ -56,8 +56,8 @@ def all_files(path):
         if a:
             print(file.split('/')[-1] + ' split 진행 중')
             text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
-                separator="\n",
-                chunk_size=1000,
+                separator=".",
+                chunk_size=500,
                 chunk_overlap=0,
             )
             splits = text_splitter.split_documents(document)
