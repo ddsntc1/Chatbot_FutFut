@@ -21,7 +21,6 @@ class QueryResponse(BaseModel):
     response: str
 
 
-
 def resp(input_text: str) -> str:
 
     PROMPT = '''Below is an instruction that describes a task. Write a response that appropriately completes the request.'''

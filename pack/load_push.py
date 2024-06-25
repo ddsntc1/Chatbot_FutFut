@@ -76,7 +76,7 @@ def all_files(path):
     embedding_model = SentenceTransformerEmbeddings(model_name='BM-K/KoSimCSE-roberta-multitask', model_kwargs={"trust_remote_code":True}) 
     
     # 벡터스토어 선언
-    os.environ['PINECONE_API_KEY']
+
     api_key = os.environ['PINECONE_API_KEY']
     pc = Pinecone(api_key=api_key)   
 
@@ -132,4 +132,4 @@ def all_files(path):
     )
 
     print('저장 완료')
-    return Vectorstore
+    return Vectorstore, flattened_list
