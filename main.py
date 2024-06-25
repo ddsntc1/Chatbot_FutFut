@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import TextStreamer
+
 from load_model_type_a import load_Auto
 from load_model_type_b import load_Fast
 
