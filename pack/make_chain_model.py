@@ -14,7 +14,7 @@ def make_chain_llm(retriever,llm):
     # llm = ChatOllama(model="zephyr:latest")
 
     template = "\"```\" Below is an instruction that describes a task. Write a response that appropriately completes the request."\
-    "제시하는 context에서만 대답하고 context에 없는 내용은 모르겠다고 대답해"\
+    "제시하는 context에서만 대답하고 context에 없는 내용은 생성하지마"\
     "make answer in korean. 한국어로 대답하세요"\
     "\n\nContext:\n{context}\n;"\
     "Question: {question}"\
