@@ -47,7 +47,9 @@ def all_files(path):
         elif file.endswith('.csv'):
             loader = CSVLoader(file)
             document = loader.load()
-            a = True
+            docs = come_data(document)
+            f_docs.append(docs)
+            a = False
         elif file.endswith('.pdf'):
             loader = PyMuPDFLoader(file)
             document = loader.load()
