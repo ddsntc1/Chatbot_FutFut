@@ -8,6 +8,7 @@
 - Model : 
 - Dataset :
   [Dongwookss/q_a_korean_futsal](https://huggingface.co/datasets/Dongwookss/q_a_korean_futsal)
+  
   [mintaeng/llm_futsaldata_yo](https://huggingface.co/datasets/mintaeng/llm_futsaldata_yo)
 - How-to? LLM fine-tuning & RAG 
 
