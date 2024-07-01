@@ -19,9 +19,12 @@
 <details>
   <summary>Scripts Description</summary>
 
-    -  load_model_type_a.py : transformers의 AutoModelForCausalLM을 이용하여 모델을 불러옵니다
+   load_model_type_a.py : transformers의 AutoModelForCausalLM을 이용하여 모델을 불러옵니다
     
-    -  load_model_type_b.py : Unsloth 패키지의 FastLanguageModel을 이용하여 모델을 불러옵니다. 답변 생성속도가 빠르지만 튜닝을 위한 패키지이기 때문에 Huggingface에 adapter_config가 존재하면 모델을 불러오지 못합니다.
+   load_model_type_b.py : Unsloth 패키지의 FastLanguageModel을 이용하여 모델을 불러옵니다. 답변 생성속도가 빠르지만 튜닝을 위한 패키지이기 때문에 Huggingface에 adapter_config가 존재하면 모델을 불러오지 못합니다.
+
+   main.py : pack에 있는 모듈을 활용하여 Fine-tuned Model을 불러오고 RAG를 적용시켜 FastAPI로 요청과 응답을 받을 수 있습니다.
+   
 </details>
 
   
