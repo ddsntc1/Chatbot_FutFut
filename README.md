@@ -27,6 +27,7 @@
 
    ```python
   uvicorn main:app --reload -p <포트번호지정>
+  ```
    
 </details>
 
