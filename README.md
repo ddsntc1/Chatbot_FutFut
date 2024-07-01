@@ -9,7 +9,7 @@
 - How-to? LLM fine-tuning & RAG 
 
 ### How to use? 
-- Fine-tuned Model :
+- Fine-tuned Model : Llama3-8b, Zephyr-7b
 
 
   
@@ -19,7 +19,7 @@
 #### About Fine-tuning
 
 - Method : By Unsloth
-- Trainer : SFTrainer, DPOTrainer
+- Trainer : SFTrainer, ~~DPOTrainer~~
 
 #### About RAG
 
