@@ -33,7 +33,7 @@
 
 - Method
 
-#### Fine-tuned Result:
+#### Fine-tuned Result(HuggingFace🤗): 
 - [Dongwooks](https://huggingface.co/Dongwookss)
 - [mintaeng](https://huggingface.co/mintaeng)
 
