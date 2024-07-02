@@ -18,8 +18,6 @@
 
 <details>
   <summary>Scripts Description</summary>
-  ``` Markdown
-
   
    load_model_type_a.py : transformers의 AutoModelForCausalLM을 이용하여 모델을 불러옵니다
     
@@ -31,7 +29,6 @@
   uvicorn main:app --reload -p <포트번호지정>
   ```
 
-```   
 </details>
 
   
