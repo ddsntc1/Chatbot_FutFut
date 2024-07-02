@@ -52,6 +52,8 @@
 
 - [mintaeng](https://huggingface.co/mintaeng)
 
+- [bigr00t](https://huggingface.co/bigr00t)
+
 <details>
   <summary>Using HuggingFace Model with out RAG </summary>
   
