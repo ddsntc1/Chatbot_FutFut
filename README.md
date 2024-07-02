@@ -18,7 +18,7 @@
 
 <details>
   <summary>Scripts Description</summary>
-
+  ``` Markdown
    load_model_type_a.py : transformers의 AutoModelForCausalLM을 이용하여 모델을 불러옵니다
     
    load_model_type_b.py : Unsloth 패키지의 FastLanguageModel을 이용하여 모델을 불러옵니다. 답변 생성속도가 빠르지만 튜닝을 위한 패키지이기 때문에 Huggingface에 adapter_config가 존재하면 모델을 불러오지 못합니다.
@@ -28,7 +28,7 @@
    ```python
   uvicorn main:app --reload -p <포트번호지정>
   ```
-   
+```   
 </details>
 
   
