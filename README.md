@@ -53,3 +53,52 @@
 - [mintaeng](https://huggingface.co/mintaeng)
 
 
+``` python
+# Using HuggingFace Model with out RAG 
+# !pip install transformers==4.40.0 accelerate
+
+import os
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import TextStreamer
+model_id = 'Dongwookss/원하는모델'
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(
+    model_id,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+
+PROMPT = '''
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+'''
+instruction = "question"
+messages = [
+    {"role": "system", "content": f"{PROMPT}"},
+    {"role": "user", "content": f"{instruction}"}
+    ]
+
+input_ids = tokenizer.apply_chat_template(
+    messages,
+    add_generation_prompt=True,
+    return_tensors="pt"
+).to(model.device)
+
+terminators = [
+    tokenizer.eos_token_id,
+    tokenizer.convert_tokens_to_ids("<|eot_id|>")
+]
+
+text_streamer = TextStreamer(tokenizer)
+output = model.generate(
+    input_ids,
+    max_new_tokens=4096,
+    eos_token_id=terminators,
+    do_sample=True,
+    streamer = text_streamer,
+    temperature=0.6,
+    top_p=0.9,
+    repetition_penalty = 1.1
+)
+
+```
