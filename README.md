@@ -12,7 +12,7 @@
   
   [mintaeng/llm_futsaldata_yo](https://huggingface.co/datasets/mintaeng/llm_futsaldata_yo)
 - How-to? LLM fine-tuning & RAG 
-
+---
 ### How to use? 
 - Fine-tuned Model : Llama3-8b, Zephyr-7b
 
@@ -32,7 +32,7 @@
 </details>
 
   
-
+---
 
 
 #### About Fine-tuning
