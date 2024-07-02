@@ -63,6 +63,7 @@ import os
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from transformers import TextStreamer
+
 model_id = 'Dongwookss/원하는모델'
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -75,11 +76,11 @@ PROMPT = '''
 Below is an instruction that describes a task. Write a response that appropriately completes the request.
 '''
 instruction = "question"
+
 messages = [
     {"role": "system", "content": f"{PROMPT}"},
     {"role": "user", "content": f"{instruction}"}
     ]
-
 input_ids = tokenizer.apply_chat_template(
     messages,
     add_generation_prompt=True,
