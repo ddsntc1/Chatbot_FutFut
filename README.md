@@ -52,7 +52,9 @@
 
 - [mintaeng](https://huggingface.co/mintaeng)
 
-
+<details>
+  <summary>Using HuggingFace Model with out RAG </summary>
+  
 ``` python
 # Using HuggingFace Model with out RAG 
 # !pip install transformers==4.40.0 accelerate
@@ -102,3 +104,4 @@ output = model.generate(
 )
 
 ```
+</details>
