@@ -6,11 +6,7 @@
 - **Domain** : 풋살 플랫폼에 친절한 설명을 해주는 챗봇을 구축하였습니다.
 - **Concept** : '해요'체를 사용하며 친절하게 답하는 챗봇. 말끝에 '언제든지 물어보세요! 풋풋~!'을 붙여 풋풋이 컨셉을 유지 
 - **Model** : Mistral 기반의 [Zephyr](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) 모델과 Meta의 [Llama3](https://huggingface.co/meta-llama/Meta-Llama-3-8B) 모델을 대상으로 진행하였습니다. 
-- **Dataset** : 말투 학습을 위한 데이터셋을 구축하여 진행하였습니다. 
-  
-  [Dongwookss/q_a_korean_futsal](https://huggingface.co/datasets/Dongwookss/q_a_korean_futsal)
-  
-  [mintaeng/llm_futsaldata_yo](https://huggingface.co/datasets/mintaeng/llm_futsaldata_yo)
+- **Dataset** : 말투 학습을 위한 데이터셋을 구축하여 진행하였습니다. [Dongwookss/q_a_korean_futsal](https://huggingface.co/datasets/Dongwookss/q_a_korean_futsal), [mintaeng/llm_futsaldata_yo](https://huggingface.co/datasets/mintaeng/llm_futsaldata_yo)
 - **How-to**? 말투 학습을 위한 Fine-tuning과 정보 제공을 위한 RAG를 적용시켰습니다. 구현은 **FastAPI**를 이용하여 Back-end와 소통할 수 있도록 진행하였습니다. 
 ---
 ### How to use? 
