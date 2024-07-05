@@ -7,8 +7,6 @@
 #### Members
 [😎강동욱](https://github.com/ddsntc1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [🦄강민지](https://github.com/lucide99)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [😺신대근](https://github.com/bigroot0504)
 
----
-
 #### 🚀 Use Tech
 ![Ubuntu](https://img.shields.io/badge/ubuntu-orange?style=for-the-badge&logo=ubuntu)
 ![Slack](https://img.shields.io/badge/slack-blue?style=for-the-badge&logo=slack)
@@ -16,6 +14,7 @@
 ![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=GoogleColab)
 ![Colab](https://img.shields.io/badge/FastAPI-cyanblue?style=for-the-badge&logo=FastAPI)
 
+---
 
 ### About FutFut
 <img src="https://github.com/ddsntc1/Chatbot_FutFut/assets/38596856/cb1cd8b7-c556-46a8-ab8d-e093af713433.jpg" width="400" height="400">
