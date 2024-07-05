@@ -108,7 +108,7 @@ output = model.generate(
 - **Retrieval** : **Kiwipiepy+BM25** 와 **Embedding_Model + VectorDB** 조합을 통해 Semantic search를 목표로 진행하였습니다.
 
 
-### 구성 정보
+### Directory Structure
 ```Linux
 .
 ├── backupfiles
