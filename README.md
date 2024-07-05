@@ -157,6 +157,9 @@ output = model.generate(
 └── test.ipynb
 ```
 
+---
+
+#### HuggingFace account
 
 - [Dongwooks](https://huggingface.co/Dongwookss) 
 - [mintaeng](https://huggingface.co/mintaeng)
