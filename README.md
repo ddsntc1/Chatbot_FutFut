@@ -159,7 +159,7 @@ output = model.generate(
 
 ---
 
-#### HuggingFace account
+#### 🤗 HuggingFace account 🤗
 
 - [Dongwooks](https://huggingface.co/Dongwookss) 
 - [mintaeng](https://huggingface.co/mintaeng)
